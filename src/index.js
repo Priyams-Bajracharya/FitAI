@@ -3,6 +3,7 @@ const dotenv = require('dotenv')
 
 dotenv.config()//loads .env file variables into process.env
 
+const pool= require('./db')
 const app = express()
 
 app.use(express.json())//tells express to automatically parse incoming json to use req.body
